@@ -1,0 +1,626 @@
+﻿<!doctype html>
+<html lang="zh-CN" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>司夜罗盘 · Minecraft 服务器</title>
+  <meta name="description" content="司夜罗盘：一个以「夜」与「方向」为名的 Minecraft 服务器。看实时状态、玩法、历程、风景、合照与成员。">
+  <meta name="theme-color" content="#070a14">
+  <meta property="og:title" content="司夜罗盘 · Minecraft 服务器">
+  <meta property="og:description" content="在樱花与长夜之间，总有人提着灯等你。">
+  <meta property="og:image" content="/noctgovernor/assets/img/hero-01.jpg">
+  <link rel="icon" href="/noctgovernor/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/noctgovernor/assets/css/style.css">
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+</head>
+<body class="view-home">
+  <div class="page-veil" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <div class="bg bg--home" aria-hidden="true">
+    <div class="hero-slides" data-slides>
+      <div class="hero-slide is-active" style="background-image:url('/noctgovernor/assets/img/hero-home.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/noctgovernor/assets/img/hero-01.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/noctgovernor/assets/img/hero-02.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/noctgovernor/assets/img/hero-03.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/noctgovernor/assets/img/hero-04.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/noctgovernor/assets/img/hero-05.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/noctgovernor/assets/img/hero-06.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/noctgovernor/assets/img/hero-07.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/noctgovernor/assets/img/hero-08.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/noctgovernor/assets/img/hero-09.jpg')"></div>
+    </div>
+    <div class="bg__veil"></div>
+  </div>
+
+  <div class="bg bg--inner" aria-hidden="true">
+    <div class="bg__img" style="background-image:url('/noctgovernor/assets/img/bg-pages.jpg')"></div>
+    <div class="bg__veil"></div>
+  </div>
+
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav__logo" href="#home" aria-label="司夜罗盘 首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoGold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f6e2b4"/><stop offset="1" stop-color="#a8813a"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="22" fill="none" stroke="url(#logoGold)" stroke-opacity=".45"/>
+          <path d="M32 9.5 36.6 27.4 54.5 32 36.6 36.6 32 54.5 27.4 36.6 9.5 32 27.4 27.4Z" fill="url(#logoGold)"/>
+          <circle cx="32" cy="32" r="4" fill="#070a14" stroke="url(#logoGold)"/>
+        </svg>
+        <span>司夜<em>罗盘</em></span>
+      </a>
+
+      <nav aria-label="主导航">
+        <ul class="nav__links">
+          <li><a href="#home" data-nav="home" aria-current="page">首页</a></li>
+          <li><a href="#history" data-nav="history">历程</a></li>
+          <li><a href="#scenery" data-nav="scenery">风景</a></li>
+          <li><a href="#photos" data-nav="photos">合照</a></li>
+          <li><a href="#members" data-nav="members">成员</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__drawer" id="nav-drawer">
+      <nav aria-label="移动端导航">
+        <ul>
+          <li><a href="#home" data-nav="home" aria-current="page">首页</a></li>
+          <li><a href="#history" data-nav="history">历程</a></li>
+          <li><a href="#scenery" data-nav="scenery">风景</a></li>
+          <li><a href="#photos" data-nav="photos">合照</a></li>
+          <li><a href="#members" data-nav="members">成员</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= 首页 ================= -->
+    <section class="page is-active" id="home" data-page="home">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <p class="eyebrow intro">Start · Since 2024</p>
+            <h1 class="hero__title intro">司夜<span class="accent">罗盘</span></h1>
+            <p class="hero__lead intro">
+              樱霞洒在方块上，夜色落在屋檐上————
+              这里是另一个家，我们用回忆赋予美好的意义                
+            </p>
+            <p class="hero__meta intro">
+              <span><b>开服</b> 2024</span>
+            </p>
+          </div>
+
+          <div class="tap-hint-wrap">
+            <button class="tap-hint" id="tap-hint" type="button" hidden>轻触屏幕以继续</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="gate" id="gate">
+
+                        <section class="section" id="news">
+          <div class="container">
+            <div class="section-head">
+              <p class="eyebrow">Notice Board</p>
+              <h2 class="section-title">最新公告</h2>
+              <p class="lead">出生点告示牌上的最近五条：活动、更新与通知，按时间从新到旧。</p>
+            </div>
+
+            <div class="signs" data-news="5"></div>
+
+            <div class="more-row">
+              <a class="more-sign" href="#news-all">
+                <span class="more-sign__label">更多公告</span>
+                <span class="more-sign__hint" data-news-count>共 12 条</span>
+              </a>
+            </div>
+
+            <p class="note">
+              公告数据在 <code>assets/js/news.js</code>：改日期、标题与类型（<code>event</code> / <code>update</code> / <code>notice</code>）即可；首页取最近 5 条，其余都在公告页。
+            </p>
+          </div>
+        </section>
+
+        <section class="section section--tight" id="glimpse">
+          <div class="container">
+            <div class="feature">
+              <a class="feature__media" href="#photos" aria-label="查看合照墙">
+                <img src="/noctgovernor/assets/img/hero-01.jpg" alt="服务器广场上的全员合照" loading="lazy">
+                <span class="feature__badge">全员合照</span>
+              </a>
+              <div class="feature__body">
+                <p class="eyebrow">Glimpses</p>
+                <h2 class="section-title">世界的一角</h2>
+                <p class="lead">截图都来自服务器实拍。想看的更多，从这里进各自的页面。</p>
+                <ul class="feature__links">
+                  <li><a href="#photos">合照墙 <span>留影与活动合影</span></a></li>
+                  <li><a href="#scenery">服务器风景 <span>樱花街、灯塔与雾</span></a></li>
+                  <li><a href="#history">历程 <span>从一块空地到樱花街</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="eras">
+          <div class="container">
+            <div class="eras-head">
+              <div class="section-head">
+                <p class="eyebrow">Chronicle</p>
+                <h2 class="section-title">服务器发展历程</h2>
+                <p class="lead">六期开服记录，从左到右就是时间顺序。拖动卡片、滚动滚轮或按方向键，一期一期看过去。</p>
+              </div>
+              <div class="eras-head__side">
+                <p class="eras-count">06<small>期</small></p>
+                <a class="link-more" href="#history">查看完整历程</a>
+              </div>
+            </div>
+
+            <div class="ruler">
+              <div class="ruler__bar">
+                <span class="ruler__hint">拖动 / 滚轮 / ← → 浏览</span>
+                <div class="ruler__controls">
+                  <button class="ruler__btn" type="button" data-era-prev aria-label="上一期">‹</button>
+                  <button class="ruler__btn" type="button" data-era-next aria-label="下一期">›</button>
+                </div>
+              </div>
+              <div class="ruler__viewport" data-era-viewport tabindex="0" role="region" aria-label="服务器发展历程">
+                <ol class="ruler__track" data-era-track></ol>
+              </div>
+            </div>
+            <noscript><p class="note">发展历程需要启用 JavaScript 才能横向浏览。</p></noscript>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ================= 全部公告 ================= -->
+    <section class="page" id="news-all" data-page="news-all">
+      <section class="page-head">
+        <div class="container">
+          <nav class="crumbs intro" aria-label="面包屑">
+            <a href="#home">首页</a><span aria-hidden="true">/</span><span>公告</span>
+          </nav>
+          <p class="eyebrow intro">Notice Board</p>
+          <h1 class="page-head__title intro">全部公告</h1>
+          <p class="page-head__lead intro">
+            从 2026.11 往前，贴在出生点告示牌上的通知都在这里：活动、更新与维护记录，按时间从新到旧。
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="signs" data-news="all"></div>
+
+          <div class="more-row">
+            <a class="more-sign" href="#home">
+              <span class="more-sign__label">返回首页</span>
+              <span class="more-sign__hint">回到最初那块牌子</span>
+            </a>
+          </div>
+
+          <p class="note">
+            公告数据在 <code>assets/js/news.js</code>：新增一条会自动出现在这里，并在首页取最近 5 条。
+          </p>
+        </div>
+      </section>
+    </section>
+    <!-- ================= 历程 ================= -->
+    <section class="page" id="history" data-page="history">
+      <section class="page-head">
+        <div class="container">
+          <nav class="crumbs intro" aria-label="面包屑">
+            <a href="#home">首页</a><span aria-hidden="true">/</span><span>历程</span>
+          </nav>
+          <p class="eyebrow intro">Our Story</p>
+          <h1 class="page-head__title intro">历程</h1>
+          <p class="page-head__lead intro">
+            服务器没有宏大的开局：一块空地、一间木屋、两个还在摸索的人。
+            接下来几年发生的事都记在这条线上——扩界、重建、樱花街，以及很多人来了又留下。
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="stats">
+            <div class="stat reveal">
+              <p class="stat__num">980<small>天</small></p>
+              <p class="stat__label">开服至今</p>
+            </div>
+            <div class="stat reveal" data-delay="1">
+              <p class="stat__num">180<small>人</small></p>
+              <p class="stat__label">来过这里的玩家</p>
+            </div>
+            <div class="stat reveal" data-delay="2">
+              <p class="stat__num">60<small>座</small></p>
+              <p class="stat__label">留存下来的建筑</p>
+            </div>
+          </div>
+          <p class="note">上面的数字是占位估算，替换成真实统计即可。</p>
+        </div>
+      </section>
+      <section class="section" id="eras-history">
+        <div class="container">
+          <div class="eras-head">
+            <div class="section-head">
+              <p class="eyebrow">Chronicle</p>
+              <h2 class="section-title">服务器发展历程</h2>
+              <p class="lead">从第一期的宝可梦重铸，到现在的方可梦二期；每一期都是一次重新开始，也是一段新地图。</p>
+            </div>
+            <div class="eras-head__side">
+              <p class="eras-count">06<small>期</small></p>
+            </div>
+          </div>
+
+          <div class="ruler">
+            <div class="ruler__bar">
+              <span class="ruler__hint">拖动 / 滚轮 / ← → 浏览</span>
+              <div class="ruler__controls">
+                <button class="ruler__btn" type="button" data-era-prev aria-label="上一期">‹</button>
+                <button class="ruler__btn" type="button" data-era-next aria-label="下一期">›</button>
+              </div>
+            </div>
+            <div class="ruler__viewport" data-era-viewport tabindex="0" role="region" aria-label="服务器发展历程">
+              <ol class="ruler__track" data-era-track></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Timeline</p>
+            <h2 class="section-title">时间线</h2>
+            <p class="lead">按开服顺序排列，最近的事件在最下面。</p>
+          </div>
+
+          <!-- TODO(content): 按真实事件替换日期与描述 -->
+          <ol class="timeline" style="list-style:none">
+            <li class="tl reveal">
+              <p class="tl__date">2024.03</p>
+              <h3 class="tl__title">开服：一块空地</h3>
+              <p class="tl__text">世界刚生成，出生点空无一物。第一座建筑是临时木屋，后来变成了公共仓库。</p>
+            </li>
+            <li class="tl reveal">
+              <p class="tl__date">2024.06</p>
+              <h3 class="tl__title">长夜灯塔落成</h3>
+              <p class="tl__text">出生点的灯塔成为服务器地标；夜晚从海上开船回来，第一眼能看到的就是它的光。</p>
+            </li>
+            <li class="tl reveal">
+              <p class="tl__date">2024.10</p>
+              <h3 class="tl__title">第一次扩界</h3>
+              <p class="tl__text">边界从 2000 格扩到 5000 格，资源区重新划分，老玩家把多余的物资放进了公共仓库。</p>
+            </li>
+            <li class="tl reveal">
+              <p class="tl__date">2025.02</p>
+              <h3 class="tl__title">樱花街动工</h3>
+              <p class="tl__text">几位玩家自发组织街区建造，约定统一的木构风格与樱花配置，一直修到今天。</p>
+            </li>
+            <li class="tl reveal">
+              <p class="tl__date">2025.08</p>
+              <h3 class="tl__title">活动体系成型</h3>
+              <p class="tl__text">周末活动固定下来：寻宝、建造赛、联机小游戏轮换，规则写在出生点的告示牌上。</p>
+            </li>
+            <li class="tl reveal">
+              <p class="tl__date">2026.01</p>
+              <h3 class="tl__title">新周目，旧图归档</h3>
+              <p class="tl__text">主世界重开，旧存档完整保留并开放下载；老建筑的照片留在合照墙与风景页。</p>
+            </li>
+            <li class="tl reveal">
+              <p class="tl__date">2026.11</p>
+              <h3 class="tl__title">樱花街落成 · 站点上线</h3>
+              <p class="tl__text">当前版本。服务器的第一个正式主页上线，成员页与合照墙也一起开放。</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="community reveal">
+            <div>
+              <p class="eyebrow">Next</p>
+              <h2 class="section-title">下一段写什么？</h2>
+              <p class="lead">下一座建筑、下一场活动、下一个来的人——时间线还很长。</p>
+            </div>
+            <div style="display:grid;gap:10px;justify-items:start">
+              <a class="btn btn--ghost" href="#photos">看看合照墙</a>
+              <a class="btn btn--ghost" href="#scenery">看看服务器风景</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 风景 ================= -->
+    <section class="page" id="scenery" data-page="scenery">
+      <section class="page-head">
+        <div class="container">
+          <nav class="crumbs intro" aria-label="面包屑">
+            <a href="#home">首页</a><span aria-hidden="true">/</span><span>服务器风景</span>
+          </nav>
+          <p class="eyebrow intro">Scenery</p>
+          <h1 class="page-head__title intro">服务器风景</h1>
+          <p class="page-head__lead intro">
+            没有开光影的截图也值得留一张。这里收集服务器里被拍下来的角落：
+            樱花街、长夜灯塔、雾里的灯笼，还有一些说不清是哪里的屋顶。
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Gallery</p>
+            <h2 class="section-title">实拍</h2>
+            <p class="lead">点开任意一张可放大浏览，方向键切换、Esc 关闭。</p>
+          </div>
+
+          <div class="gallery">
+            <button class="tile" type="button" data-lightbox data-caption="春日 · 樱花街前的全员合照" data-full="/noctgovernor/assets/img/hero-home.jpg" aria-label="放大查看：春日樱花街前的合照">
+              <img src="/noctgovernor/assets/img/hero-home.jpg" alt="春日樱花街前的全员合照" loading="lazy">
+              <span class="tile__caption">春日 · 樱花街前</span>
+            </button>
+
+            <button class="tile" type="button" data-lightbox data-caption="长夜 · 雾里的灯笼" data-full="/noctgovernor/assets/img/bg-pages.jpg" aria-label="放大查看：长夜雾里的灯笼">
+              <img src="/noctgovernor/assets/img/bg-pages.jpg" alt="夜雾中的灯笼与树影" loading="lazy">
+              <span class="tile__caption">长夜 · 雾里的灯笼</span>
+            </button>
+
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+          </div>
+
+          <p class="note">
+            把截图放进 <code>assets/img/</code>，再把任意「待上传」换成同样的 button 结构，
+            改四处属性（<code>data-full</code>、<code>src</code>、<code>data-caption</code>、<code>alt</code>）即可。
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="community reveal">
+            <div>
+              <p class="eyebrow">Contribute</p>
+              <h2 class="section-title">你的截图也可以出现在这里</h2>
+              <p class="lead">拍到了好看的角落？在游戏里找管理报坐标与拍摄时间，我们会挑进风景页。</p>
+            </div>
+            <div style="display:grid;gap:10px;justify-items:start">
+              <a class="btn btn--ghost" href="#photos">看看合照墙</a>
+              <a class="btn btn--ghost" href="#history">读读服务器历程</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 合照墙 ================= -->
+    <section class="page" id="photos" data-page="photos">
+      <section class="page-head">
+        <div class="container">
+          <nav class="crumbs intro" aria-label="面包屑">
+            <a href="#home">首页</a><span aria-hidden="true">/</span><span>合照墙</span>
+          </nav>
+          <p class="eyebrow intro">Group Photos</p>
+          <h1 class="page-head__title intro">合照墙</h1>
+          <p class="page-head__lead intro">
+            每次活动结束都会拍一张。有人站前排，有人站在树上，有人只露出半张脸——
+            照片里的人不一定还在，但那天确实都在。
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Wall</p>
+            <h2 class="section-title">留影</h2>
+            <p class="lead">点开可放大；某张照片想撤下，跟管理说一声即可。</p>
+          </div>
+
+          <div class="gallery">
+            <button class="tile" type="button" data-lightbox data-caption="全员合照" data-full="/noctgovernor/assets/img/hero-01.jpg" aria-label="放大查看：全员合照">
+              <img src="/noctgovernor/assets/img/hero-01.jpg" alt="服务器广场上的全员合照" loading="lazy">
+              <span class="tile__caption">全员合照</span>
+            </button>
+
+            <button class="tile" type="button" data-lightbox data-caption="长夜 · 星下合影" data-full="/noctgovernor/assets/img/hero-02.jpg" aria-label="放大查看：长夜星下合影">
+              <img src="/noctgovernor/assets/img/hero-02.jpg" alt="夜空下的玩家合影" loading="lazy">
+              <span class="tile__caption">长夜 · 星下合影</span>
+            </button>
+
+            <button class="tile" type="button" data-lightbox data-caption="春日 · 广场合影" data-full="/noctgovernor/assets/img/hero-03.jpg" aria-label="放大查看：春日广场合影">
+              <img src="/noctgovernor/assets/img/hero-03.jpg" alt="春日广场上的合影" loading="lazy">
+              <span class="tile__caption">春日 · 广场合影</span>
+            </button>
+
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+            <div class="tile tile--empty">待上传</div>
+          </div>
+
+          <p class="note">
+            合照统一存在 <code>assets/img/</code>，命名建议 <code>photo-2026-spring.jpg</code>；
+            替换时记得同时改 <code>data-full</code>、<code>src</code>、<code>data-caption</code> 与 <code>alt</code> 四处。
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="community reveal">
+            <div>
+              <p class="eyebrow">Next Shoot</p>
+              <h2 class="section-title">下一次合照，等你来站</h2>
+              <p class="lead">活动结束前十分钟集合拍合照；缺席的人可以后期 P 上去，但位置要靠抢。</p>
+            </div>
+            <div style="display:grid;gap:10px;justify-items:start">
+              <a class="btn btn--ghost" href="#scenery">看看服务器风景</a>
+              <a class="btn btn--ghost" href="#history">读读服务器历程</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 成员 ================= -->
+    <section class="page" id="members" data-page="members">
+      <section class="page-head">
+        <div class="container">
+          <nav class="crumbs intro" aria-label="面包屑">
+            <a href="#home">首页</a><span aria-hidden="true">/</span><span>花名册</span>
+          </nav>
+          <p class="eyebrow intro">Members</p>
+          <h1 class="page-head__title intro">成员信息</h1>
+          <p class="page-head__lead intro">
+            一群东子：）
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Roster</p>
+            <h2 class="section-title">当前名单</h2>
+            <p class="lead">留个空：）</p>
+          </div>
+
+          <!-- TODO(content): 把昵称、加入时间与一句话介绍替换成真实信息 -->
+          <div class="members" data-members></div>
+
+          <p class="note">
+            名单在 <code>assets/js/members.js</code> 里：新增一位成员只要加一条记录，头像填 <code>avatar</code> 路径就用照片，不填会自动生成一张像素脸。
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="culture">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Culture</p>
+            <h2 class="section-title">我们怎么相处</h2>
+            <p class="lead">没有长篇守则，只有几条一直在执行的默契。</p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card reveal">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H8l-4 4z"/></svg>
+              </span>
+              <h3 class="card__title">先说清楚</h3>
+              <p class="card__text">要动别人的建筑、借别人的箱子，先在告示牌说一声；同意了再动手。</p>
+            </article>
+
+            <article class="card reveal" data-delay="1">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4 7v6c0 4 3.4 6.6 8 8 4.6-1.4 8-4 8-8V7z"/></svg>
+              </span>
+              <h3 class="card__title">不作弊，不刷资源</h3>
+              <p class="card__text">外挂、复制与脚本一律封禁；漏洞当 bug 反馈，不当作福利。</p>
+            </article>
+
+            <article class="card reveal" data-delay="2">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M8 12h8M12 8v8"/></svg>
+              </span>
+              <h3 class="card__title">允许无聊</h3>
+              <p class="card__text">不强制上线、不考核活跃度；想休息就休息，位置一直留着。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="community reveal">
+            <div>
+              <p class="eyebrow">Join</p>
+              <h2 class="section-title">服务器一直开着</h2>
+              <p class="lead">不需要面试，也不用先完成任务；直接进服，找个地方开始搭就行。</p>
+            </div>
+            <div style="display:grid;gap:10px;justify-items:start">
+              <a class="btn btn--ghost" href="#history">读读服务器历程</a>
+              <a class="btn btn--ghost" href="#photos">看看合照墙</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="nav__logo" href="#home">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="32" cy="32" r="22" fill="none" stroke="#a8813a" stroke-opacity=".7"/>
+              <path d="M32 9.5 36.6 27.4 54.5 32 36.6 36.6 32 54.5 27.4 36.6 9.5 32 27.4 27.4Z" fill="#e8c47a"/>
+            </svg>
+            <span>司夜<em>罗盘</em></span>
+          </a>
+          <p>一个以「夜」与「方向」为名的 Minecraft 服务器。世界一直开着，随时可以进来。</p>
+        </div>
+
+        <nav class="footer__col" aria-label="页面导航">
+          <h3>页面</h3>
+          <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#history">历程</a></li>
+            <li><a href="#scenery">服务器风景</a></li>
+            <li><a href="#photos">合照墙</a></li>
+            <li><a href="#members">成员信息</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h3>关于</h3>
+          <ul>
+            <li><a href="#history">发展历程</a></li>
+            <li><span style="color:var(--muted)">本站为玩家站点，非官方</span></li>
+            <li><span style="color:var(--muted)">与 Mojang / Microsoft 无关</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> 司夜罗盘 · 与 Mojang / Microsoft 无关</span>
+        <a href="#main">回到顶部 ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/noctgovernor/assets/js/news.js" defer></script>
+  <script src="/noctgovernor/assets/js/members.js" defer></script>
+  <script src="/noctgovernor/assets/js/site.js" defer></script>
+  <script src="/noctgovernor/assets/js/player.js" defer></script>
+  <script src="/noctgovernor/assets/js/eras.js" defer></script>
+  <script src="/noctgovernor/assets/js/home.js" defer></script>
+</body>
+</html>
