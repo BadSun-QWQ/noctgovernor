@@ -1,4 +1,4 @@
-﻿/* 司夜罗盘 · 背景音乐
+/* 司夜罗盘 · 背景音乐
    单文档内常驻的 <audio>，切页不中断。
    刷新后按上次的进度与播放状态恢复（若浏览器拦截自动播放，则保持暂停）。
    无依赖。 */
@@ -54,7 +54,7 @@ window.PLAYER = (function () {
 
     audio = document.createElement('audio');
     audio.id = 'bgm';
-    audio.src = '/noctgovernor/assets/audio/bgm.flac';
+    audio.src = './assets/audio/bgm.flac';
     audio.loop = true;
     audio.preload = 'auto';
     audio.volume = 0.55;

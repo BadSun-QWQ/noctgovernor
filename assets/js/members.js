@@ -1,4 +1,4 @@
-﻿/* 司夜罗盘 · 成员名单
+/* 司夜罗盘 · 成员名单
    数据驱动：新增一位成员只需在 MEMBERS 里加一条。
    头像：填 avatar 路径就用照片；不填会自动生成一张像素脸，保证每个岗位都有头像位。 */
 (function () {
@@ -6,14 +6,14 @@
 
   // 新增成员复制一条即可；role / since / bio 随意改，avatar 可留空
   var MEMBERS = [
-    { name: '【BadSun_QWQ】', role: '腐竹 · Owner', since: '2023.03', bio: '：）', avatar: '/noctgovernor/assets/img/avatars/badsun.png' },
-    { name: '【0rangy】', role: '管理 · Admin', since: '2023.05', bio: '原木的主人，平地的手子', avatar: '/noctgovernor/assets/img/avatars/0rangy.png'},
-    { name: '【ChiZz_Xinggg】', role: '管理 · Admin', since: '2024.09', bio: '「司夜罗盘首席建筑师」', avatar: '/noctgovernor/assets/img/avatars/ChiZz_Xinggg.png' },
-    { name: '【R1n_Song】', role: '管理 · Admin', since: '2024.06', bio: '王从天降面目狰狞，长手长脚打枪挺行' , avatar: '/noctgovernor/assets/img/avatars/R1n_Song.png'},
-    { name: '【OneMore_TvT】', role: '肝帝 · Grinder', since: '2025.02', bio: '空', avatar:'/noctgovernor/assets/img/avatars/OneMore_TvT.png'},
-    { name: '【Moonlightn23777】', role: '咕咕嘎嘎 · GuGuGaGa', since: '2025.04', bio: '空'  , avatar: '/noctgovernor/assets/img/avatars/Moonlightn23777.png'},
-    { name: '【待填：昵称】', role: '活动 · Events', since: '2025.08', bio: '空。'  , avatar: '/noctgovernor/assets/img/avatars/R1n_Song.png'},
-    { name: '【待填：昵称】', role: '接待 · Welcomer', since: '2026.01', bio: '空。'  , avatar: '/noctgovernor/assets/img/avatars/R1n_Song.png'}
+    { name: '【BadSun_QWQ】', role: '腐竹 · Owner', since: '2023.03', bio: '：）', avatar: './assets/img/avatars/badsun.png' },
+    { name: '【0rangy】', role: '管理 · Admin', since: '2023.05', bio: '原木的主人，平地的手子', avatar: './assets/img/avatars/0rangy.png'},
+    { name: '【ChiZz_Xinggg】', role: '管理 · Admin', since: '2024.09', bio: '「司夜罗盘首席建筑师」', avatar: './assets/img/avatars/ChiZz_Xinggg.png' },
+    { name: '【R1n_Song】', role: '管理 · Admin', since: '2024.06', bio: '王从天降面目狰狞，长手长脚打枪挺行' , avatar: './assets/img/avatars/R1n_Song.png'},
+    { name: '【OneMore_TvT】', role: '肝帝 · Grinder', since: '2025.02', bio: '空', avatar:'./assets/img/avatars/OneMore_TvT.png'},
+    { name: '【Moonlightn23777】', role: '咕咕嘎嘎 · GuGuGaGa', since: '2025.04', bio: '空'  , avatar: './assets/img/avatars/Moonlightn23777.png'},
+    { name: '【待填：昵称】', role: '活动 · Events', since: '2025.08', bio: '空。'  , avatar: './assets/img/avatars/R1n_Song.png'},
+    { name: '【待填：昵称】', role: '接待 · Welcomer', since: '2026.01', bio: '空。'  , avatar: './assets/img/avatars/R1n_Song.png'}
   ];
 
   /* 自动头像：8×8 像素脸，按索引取配色，看起来像 MC 皮肤头 */

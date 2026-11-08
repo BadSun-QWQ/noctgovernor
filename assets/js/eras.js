@@ -1,10 +1,10 @@
-﻿/* 司夜罗盘 · 服务器发展历程尺
+/* 司夜罗盘 · 服务器发展历程尺
    六期开服记录，横向排列，可拖动 / 滚轮 / 方向键浏览。
    数据只在这里改一次，首页与「历程」页共用。 */
 (function () {
   'use strict';
 
-  // TODO(content): 把开服时间、版本号、封面换成真实信息；封面可加 cover: '/noctgovernor/assets/img/xxx.jpg'
+  // TODO(content): 把开服时间、版本号、封面换成真实信息；封面可加 cover: './assets/img/xxx.jpg'
   var ERAS = [
     {
       name: '宝可梦重铸',
